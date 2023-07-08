@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#title {
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+:host ::ng-deep button{
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 10px;
+    border-color: rgb(155, 155, 155);
+    border-width: 1px;
+}
+:host ::ng-deep article{
+    border: solid;
+    border-color: rgb(213, 213, 213);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+h2{
+    font-weight: bold;
+}
+.margin{
+    margin-top: 30px;
+}
+.dimensions{
+    width: 900px;
+}
+:host ::ng-deep label{
+    font-size: 1.2rem;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+:host ::ng-deep img{
+   width:100%;
+}
+:host ::ng-deep .text-style{
+    width: 500px;
+    height: 400px;
+    resize: none;
+    font-size: 1.2rem;
+}
+:host ::ng-deep input{
+    margin-bottom: 10px;
+    width: 500px;
+    font-size: 1.2rem;
+}
+.gradient-background {
+    background: linear-gradient(140deg,#020202,#efeffb,#6565f7);
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

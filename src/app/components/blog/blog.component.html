@@ -1,0 +1,19 @@
+<div>
+    <div>
+        <div><label for="title">Título</label></div>
+        <input type="text" id="title" placeholder="Introduce el título" [(ngModel)]="newArticle.title">
+    </div>
+    <div>
+        <div><label for="date">Fecha</label></div>
+        <input type="text" id="date" placeholder="Introduce la fecha con el formato dd-mm-aaaa" [(ngModel)]="newArticle.date">
+    </div>
+    <div>
+        <div><label for="img">Imagen</label></div>
+        <input type="text" id="img" placeholder="introduce una imagen" [(ngModel)]="newArticle.img">
+    </div>
+    <div>
+        <div><label for="body">Cuerpo</label></div>
+        <textarea type="text" id="body" placeholder="Introduce el cuerpo" [(ngModel)]="newArticle.body" class="text-style"></textarea>
+    </div>
+    <button (click)="addNewArticle()">Agregar</button>
+</div>
